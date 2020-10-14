@@ -38,7 +38,14 @@ namespace HomeWork2
             {
                 if (x < -6)
                 {
-                    Console.WriteLine("y({0:0.0}) = {1:0.00}", x, segment1(x, r));
+                    if (x>(-8-r)&&x<(-8+r))
+                    {
+                        Console.WriteLine("y({0:0.0}) = {1:0.00}", x, segment1(x, r));
+                    }
+                    else
+                    {
+                        Console.WriteLine("значение функции не определено");
+                    }
                 }
                 else if (x < 2)
                 {
